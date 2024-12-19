@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <div class="coin-counter">Coins: <span id="coin-count">0</span></div>
+    </header>
+
+    <div class="container" id="habit-container"></div>
+    <button class="add-habit" id="add-habit">+</button>
+
+    <div class="modal" id="habit-modal">
+        <div class="modal-content">
+            <h2>Add a New Habit</h2>
+            <input type="text" id="habit-title" placeholder="Habit Title" readonly>
+            <input type="number" id="habit-months" placeholder="Number of Months">
+            <div class="emoji-container">
+                <button class="emoji-btn" data-habit="Sleep" data-emoji="🛏️">
+                    🛏️
+                    <div>Sleep</div>
+                </button>
+                <button class="emoji-btn" data-habit="Exercise" data-emoji="💪">
+                    💪
+                    <div>Exercise</div>
+                </button>
+                <button class="emoji-btn" data-habit="Reading" data-emoji="📚">
+                    📚
+                    <div>Reading</div>
+                </button>
+                <button class="emoji-btn" data-habit="Meditation" data-emoji="🧘‍♂️">
+                    🧘‍♂️
+                    <div>Meditation</div>
+                </button>
+                <button class="emoji-btn" data-habit="Water" data-emoji="💧">
+                    💧
+                    <div>Water</div>
+                </button>
+                <button class="emoji-btn" data-habit="Cooking" data-emoji="🍳">
+                    🍳
+                    <div>Cooking</div>
+                </button>
+                <button class="emoji-btn" data-habit="Cleaning" data-emoji="🧹">
+                    🧹
+                    <div>Cleaning</div>
+                </button>
+                <button class="emoji-btn" data-habit="Work" data-emoji="💻">
+                    💻
+                    <div>Work</div>
+                </button>
+            </div>
+            <button id="save-habit">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
